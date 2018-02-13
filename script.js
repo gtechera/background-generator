@@ -5,7 +5,7 @@ const body = document.getElementById("gradient");
 const boton1 = document.getElementById("boton1");
 const boton2 = document.getElementById("boton2");
 
-function changeGradient() {
+const changeGradient = () => {
     body.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value; 
     css.textContent = body.style.background + ";";
 }
@@ -18,10 +18,8 @@ window.addEventListener("load", function(){
     changeGradient();
 });
 
-function makeRandomColor(){
-    return '#'+Math.floor(Math.random()*16777215).toString(16);;
-  }
-
+const makeRandomColor = () => '#'+Math.floor(Math.random() * 16777215).toString(16);
+  
   boton1.addEventListener("click", function () {
       color1.value = makeRandomColor();
       changeGradient();
