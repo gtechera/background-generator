@@ -1,9 +1,9 @@
-var css = document.querySelector("h3");
-var color1 = document.querySelector("#color1");
-var color2 = document.querySelector("#color2");
-var body = document.getElementById("gradient");
-var boton1 = document.getElementById("boton1");
-var boton2 = document.getElementById("boton2");
+const css = document.querySelector("h3");
+const color1 = document.querySelector("#color1");
+const color2 = document.querySelector("#color2");
+const body = document.getElementById("gradient");
+const boton1 = document.getElementById("boton1");
+const boton2 = document.getElementById("boton2");
 
 function changeGradient() {
     body.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value; 
