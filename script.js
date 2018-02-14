@@ -13,8 +13,8 @@ const changeGradient = () => {
 color1.addEventListener("input", changeGradient);
 color2.addEventListener("input", changeGradient);
 window.addEventListener("load", function(){
-    color1.value = "#00ff00";
-    color2.value = "#ff00ff";
+    color1.value = "#f32954";
+    color2.value = "#ffffff";
     changeGradient();
 });
 
